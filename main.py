@@ -23,9 +23,8 @@ class TodoBase(BaseModel):
 
 class ToDoResponse(TodoBase):
     id : int
-
     class Config:
-        orm_mode:True 
+        orm_mode = True 
         
 def get_db():
     db=sessionLocal()
